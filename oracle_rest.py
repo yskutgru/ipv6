@@ -41,8 +41,8 @@ def send_to(data: list, url: str, auth: Optional[tuple] = None, timeout: int = 1
 
 if __name__ == "__main__":
     # Simple usage example
-    service_url = "https://mis.gte.local/ords/mis/inv/mail/"
-    json_data = [{"FILENAME": "DC-VS-01", "EMAIL": "test@example.local", "SUBJECT": "Test"}]
+    service_url = "https://www.server.local/ords/sys/inv/ip6"
+    json_data = [{"FILENAME": "DC-1", "EMAIL": "test@example.local", "SUBJECT": "Test"}]
 
     result = send_to(data=json_data, url=service_url, timeout=15)
     if result:

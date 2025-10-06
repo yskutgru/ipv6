@@ -4,16 +4,13 @@ import re
 import datetime
 from oracle_rest import send_to
 
-service_url = "https://mis.gte.local/ords/mis/inv/ip6"
+service_url = "https://www.server.local/ords/sys/inv/ip6"
 vlan_native = 4
 cmd = [
     'sudo', 'tcpdump', '-enli', 'any', 'ip6'
-    # ,'host', '10.40.101.236'
+    # ,'host', '10.4.1.2'
     # ,
-    # '2>/dev/null'
-    # 'host', '10.250.3.4',
-    # 'and', 'dst', 'port', '25',
-    # '-l'  # For line-by-line output
+    # 'and', 'dst', 'port', '25'
 ]
 
 
